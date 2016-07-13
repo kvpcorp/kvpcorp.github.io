@@ -29,9 +29,13 @@ a:focus {
 .mt20 {
 	margin-top: 20px;
 }
-.marginbottom15 {
+.mt30 {
+	margin-top: 30px;
+}
+.marginbottom15,.mb15 {
 	margin-bottom: 15px;
 }
+.mb30{ margin-bottom:30px;}
 #custom-search-input input, #custom-search-input button {
 	border-radius: 0;
 	box-shadow: none;
@@ -47,7 +51,7 @@ a:focus {
 	font-weight: 400;
 	color: #002561;
 	font-size: 15px;
-	padding: 15px 0 15px 45px;
+	 padding: 10px 15px 20px 20px;
 }
 .our_inner {
 	padding: 20px 0;
@@ -71,9 +75,18 @@ a:focus {
 	font-weight: 100;
 	padding: 0 15px 0 0;
 }
-.h_nav {
-	float: right;
+
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
+@media screen and (min-width: 769px) {
+    #navbar {
+ padding: 15px 0 0;
+ float: right;
+}
+}
+
+
 .h_top{
 	
 }
@@ -155,6 +168,15 @@ a:focus {
 	color: #002561;
 	font-size: 24px;
 }
+.reset_btn{
+	background: #F5F4F1;
+	color: #002561;
+	border: none;
+	 font-size: 21px;
+    padding: 5px 20px;
+    text-align: left;
+    width: 100%;
+}
 .sub_btn {
 	background: #EC1C24;
 	color: #fff;
@@ -206,6 +228,7 @@ a:focus {
 .p_saved_inner{ border:1px solid #EC1C24; margin:45px 0;text-align:center;padding: 0 0 45px;}
 .knowmore_btn{border:1px solid #444444; color:#EC1C24; padding: 10px 50px; font-size:15px;}
 .knowmore_btn:hover{ text-decoration:none;}
+.enquiry_title{color:#EC1C24; font-size:48px;font-weight: 100;}
 
 /* Input Effect */
 
