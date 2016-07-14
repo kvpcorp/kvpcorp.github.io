@@ -36,6 +36,7 @@ a:focus {
 	margin-bottom: 15px;
 }
 .mb30{ margin-bottom:30px;}
+.mb40{ margin-bottom:40px;}
 #custom-search-input input, #custom-search-input button {
 	border-radius: 0;
 	box-shadow: none;
@@ -229,6 +230,36 @@ a:focus {
 .knowmore_btn{border:1px solid #444444; color:#EC1C24; padding: 10px 50px; font-size:15px;}
 .knowmore_btn:hover{ text-decoration:none;}
 .enquiry_title{color:#EC1C24; font-size:48px;font-weight: 100;}
+.aboutus p{color:#444444; font-size:28px;font-weight:100; }
+.about_title{ color:#EC1C24; font-size:48px; }
+.about_box{ border:1px solid #EC1C24; }
+.about_box p{ font-size:48px; color:#002561;   font-size: 45px;
+    font-weight: 500;
+    padding: 15px 25px;}
+.about_content{color:#444444; font-size:28px; font-weight:100;}
+.s_plan p{ color:#002561; font-size:24px; font-weight:500; text-align:left;}
+
+.s_plan a:hover{ text-decoration:none;	 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Input Effect */
 
