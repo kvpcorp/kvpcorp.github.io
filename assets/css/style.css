@@ -61,7 +61,7 @@ a:focus {
 	font-weight: 400;
 	color: #002561;
 	font-size: 15px;
-	padding: 10px 15px 20px 20px;
+	padding: 10px 0px 20px 50px;
 }
 .our_inner {
 	padding: 20px 0;
@@ -303,6 +303,30 @@ a:focus {
 .s_plan a:hover {
 	text-decoration: none;
 }
+
+.enquiry select,.contact select {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #474644;
+    padding: 6px 10px;
+}
+
+.contact input[type="text"], .contact input[type="email"]{
+ padding: 0 0 5px 10px;
+  background: transparent;
+  width: 100%;
+  border-bottom: 1px solid #474644!important;
+  color: #A6A6A4;
+  font-size: 18px;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;}
+  .contact textarea{  border: 1px solid #474644!important;
+  box-shadow: none;border-radius: 0; min-height: 100px;}
+
+
+
+
 /*input Design */
 
 .newletter input[type="text"], .newletter input[type="email"], .enquiry input[type="text"], .enquiry input[type="email"], .enquiry input[type="tel"] {
@@ -313,6 +337,8 @@ a:focus {
 	color: #A6A6A4;
 	font-size: 18px;
 	border: none;
+	box-shadow: none;
+    border-radius: 0;
 }
 /* Slideer css Start */
 .carousel-caption {
