@@ -61,7 +61,7 @@ a:focus {
 	font-weight: 400;
 	color: #002561;
 	font-size: 15px;
-	padding: 10px 0px 20px 50px;
+	  padding: 10px 25px 20px 25px;
 }
 .our_inner {
 	padding: 20px 0;
@@ -370,3 +370,142 @@ a:focus {
 	padding: 10px 25px;
 }
 /* Slideer css End */
+
+
+/*faq Start*/
+
+.faq-tab li {
+  float: left; list-style-type:none;
+}
+.faq-tab li.active a{ background-color:#002561; color:#fff;  text-decoration: none;}
+.faq-tab li a{ background-color:#F5F4F1; color:#002561; font-size: 16px;
+    padding: 5px 40px; margin-right:20px;}
+	.faq-tab li a:hover{   text-decoration: none;}
+	
+.faq-acc .panel{ border-bottom:1px solid #4C4C4C;}
+.faq-acc .panel-body{ color:#444444; font-size:24px; font-weight:100;}
+.faq-acc .panel-title a{font-size:28px; color:#444444;}
+
+.faq-acc .panel-heading {
+  
+  padding: 10px 0;
+}
+.faq-tab {
+  margin-bottom: 70px;
+  margin-top: 25px;
+  padding: 0;
+}
+/*faq End*/
+
+
+
+/*application Start */
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+    display: none;
+}
+.tab-content > .active,
+.pill-content > .active {
+    display: block;
+}
+.nav.nav-tabs{
+    border: none;
+}
+.nav.nav-tabs-left{
+    padding-left: 0px; 
+}
+.nav.nav-tabs-right{ 
+    padding-right: 0px;
+}
+.nav.nav-tabs > li  > a{
+    font-weight: 100;
+    color: #337ab7;
+    background: #f5f4f1;
+    padding: 8px 15px;
+    font-size: 13px;
+    margin: 10px 0px;
+    border-radius: 0px;
+}
+.nav.nav-tabs > li.active  > a, 
+.nav.nav-tabs > li  > a:hover,
+.nav.nav-tabs > li.active  > a:hover,
+.nav.nav-tabs > li  > a:focus,
+.nav.nav-tabs > li.active  > a:focus{
+    font-weight: 100;
+    color: #fff;
+    background: #337ab7;
+    padding: 8px 15px;
+    font-size: 13px;
+    margin: 10px 0px;
+    border-radius: 0px;
+}
+.tab-content {
+    background-color: #f5f4f1;
+    border: none;
+    padding: 16px;
+    color: #337ab7;
+    font-size: 14px;
+    margin: 8px 0px;
+}
+.addtocart_btn{
+    background: #337ab7;
+    color: #fff;
+    border: none;
+    font-size: 21px;
+    padding: 5px 20px;
+    text-align: left;
+    width: 100%;
+}
+.family_fare{color:#EC1C24; font-size:44px;font-weight: 100;}
+a.add_wishlist {float: right;padding-top: 15px;}
+/*Family plan  CSS End*/
+
+.newletter input[type="text"], .newletter input[type="email"], .enquiry input[type="text"], .enquiry input[type="email"], .enquiry input[type="tel"] {
+box-shadow: none;
+    border-radius: 0;
+}
+
+.enquiry select,.contact select {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #474644;
+    padding: 6px 10px;
+}
+
+.contact input[type="text"], .contact input[type="email"]{
+ padding: 0 0 5px 10px;
+  background: transparent;
+  width: 100%;
+  border-bottom: 1px solid #474644!important;
+  color: #A6A6A4;
+  font-size: 18px;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;}
+  
+.family textarea, .contact textarea{  border: 1px solid #474644!important;
+  box-shadow: none;border-radius: 0; min-height: 100px;}
+
+.login_text{
+    font-weight: 500 !important;
+    margin-top: 7px;
+}
+
+.mb150 {margin-bottom:150px;}
+
+label.error {
+    color: #BD0404;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 0 0 5px 10px;
+}
+.head-divider{
+    border-top: 1px solid #474644;
+}
+/*application End */
+
+
+
+
+
+
