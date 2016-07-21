@@ -430,6 +430,7 @@ a:focus {
 .nav.nav-tabs-right{ 
     padding-right: 0px;
 }
+.nav.nav-tabs > li { width:47%;}
 .nav.nav-tabs > li  > a{
     font-weight: 100;
     color: #337ab7;
@@ -473,7 +474,7 @@ a:focus {
 a.add_wishlist {float: right;padding-top: 15px;}
 /*Family plan  CSS End*/
 
-.newletter input[type="text"], .newletter input[type="email"], .enquiry input[type="text"], .enquiry input[type="email"], .enquiry input[type="tel"] {
+.newletter input[type="text"],.family input[type="text"],.family input[type="email"], .newletter input[type="email"], .enquiry input[type="text"], .enquiry input[type="email"], .enquiry input[type="tel"] {
 box-shadow: none;
     border-radius: 0;font-weight: 100;
 }
