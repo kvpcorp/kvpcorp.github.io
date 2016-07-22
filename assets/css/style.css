@@ -20,8 +20,8 @@
   right: 0;
 }
 .dropdown-menu{ top:inherit; background:#F5F4F1!important}
-.thumbnail{ text-align:left; background:none; border:none;color:#002561;}
-
+.thumbnail{ text-align:left; background:none; border:none;color:#002561; opacity:0.5;}
+.thumbnail:hover{ opacity:1;}
 .mission-tabs li {
   float: left;
 }
