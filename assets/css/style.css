@@ -21,6 +21,11 @@
 }
 .dropdown-menu{ top:inherit;}
 
+.mission-tabs li {
+  float: left;
+}
+
+
 
 body {
 	font-family: 'Muli', sans-serif;
@@ -95,17 +100,23 @@ a:focus {
 	color: #444;
 }
 .our_inner .our_m {
-	color: #EC1C24;
+	color: #444;
 }
 .our_inner .line {
 	border-right: 1px solid #444444;
 	margin: 0 15px;
-	opacity: 0.5;
+	opacity: 0.5;line-height: 75px;
 }
+.ourmission li.active .our_m {
+  color:#EC1C24;
+}
+.ourmission li:hover .our_m{ color:#EC1C24;}
 .ourmission p {
-	font-size: 28px;
-	font-weight: 100;
-	padding: 0 15px 0 0;
+  float: left;
+  font-size: 28px;
+  font-weight: 100;
+  padding: 0 15px 0 0;
+  width: 65%;color: #444;
 }
 .dropdown:hover .dropdown-menu {
 	display: block;
