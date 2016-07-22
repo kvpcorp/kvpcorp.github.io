@@ -365,7 +365,7 @@ a:focus {
 }
 /*input Design */
 
-.newletter input[type="text"], .newletter input[type="email"], .enquiry input[type="text"], .enquiry input[type="email"], .enquiry input[type="tel"] {
+.newletter input[type="text"],.family input[type="text"],.family input[type="email"],.newletter input[type="email"], .enquiry input[type="text"], .enquiry input[type="email"], .enquiry input[type="tel"] {
 	padding: 0 0 5px 10px;
 	background: transparent;
 	width: 100%;
