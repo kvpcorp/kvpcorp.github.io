@@ -19,7 +19,8 @@
   left: 0;
   right: 0;
 }
-.dropdown-menu{ top:inherit;}
+.dropdown-menu{ top:inherit; background:#F5F4F1!important}
+.thumbnail{ text-align:left; background:none; border:none;color:#002561;}
 
 .mission-tabs li {
   float: left;
