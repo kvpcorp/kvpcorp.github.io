@@ -25,6 +25,9 @@
 .mission-tabs li {
   float: left;
 }
+.dn {
+    display: none !important;
+}
 
 
 
