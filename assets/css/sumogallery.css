@@ -1,6 +1,6 @@
 .SumoGallery *{border:0px; margin:0px; padding:0px;}
 
-.SumoGallery{background-color: rgba(0, 0, 0, 0.7);position: fixed;top: 0px;left: 0px;right: 0px;bottom: 0px;}
+.SumoGallery{background-color: rgba(0, 0, 0, 0.7);position: fixed;top: 0px;left: 0px;right: 0px;bottom: 0px; z-index: 99;}
 
 /** COMMMON STYLES **/
 .SumoGallery a{cursor:pointer;transition: all 300ms;-webkit-transition: all 300ms;-moz-transition: all 300ms;
@@ -9,19 +9,19 @@
 
 .SumoGallery .Sarrow{position: absolute;font-size: 30px;color: #D8D8D8;opacity: 0.8;text-shadow: -1px 0px 3px rgba(0, 0, 0, 0.86);top: 50%;margin-top: -50px;padding: 10px;z-index: 10;}
 .SumoGallery .Sarrow:hover{opacity:1;}
-.SumoGallery .Sarrow.l{left:0px;}
-.SumoGallery .Sarrow.r{right:0px;}
+.SumoGallery .Sarrow.l{left:0px; text-decoration: none;}
+.SumoGallery .Sarrow.r{right:0px; text-decoration: none;}
 .SumoGallery .Sarrow.last-item{opacity: 0.3;}
 
 .SumoGallery .Sheader{background-color: rgba(0, 0, 0, 0.66);height: 40px;position: relative;}
 .SumoGallery .Sheader p{color: #fff;padding: 10px 50px;text-align: center;}
 .SumoGallery .Sheader a{font-size: 50px;line-height: 40px;color: #fff;position: absolute;right: 5px;top: 0px;display: block;cursor: pointer;opacity: 0.8;}
-.SumoGallery .Sheader a:hover{opacity:1}
+.SumoGallery .Sheader a:hover{opacity:1; text-decoration: none;}
 
-.SumoGallery .Sbody{position: absolute;top: 40px;bottom: 75px;left: 0px;right: 0px;: all 300ms;-webkit-transition: all 300ms;-moz-transition: all 300ms;}
+.SumoGallery .Sbody{position: absolute;top: 40px;bottom: 75px;left: 0px;right: 0px; -webkit-transition: all 300ms;-moz-transition: all 300ms;}
 .SumoGallery .Sbody a{display: none;left: 0px;opacity: 1;
 transition: none;-moz-transition: none;-webkit-transition: none;}
-.SumoGallery .Sbody a.sel{display: block;background-image: url('loader.gif');position: absolute;width:100%;height:100%; background-repeat: no-repeat;background-position: center;z-index:1;}
+.SumoGallery .Sbody a.sel{display: block;background-image: url('ajax_loader.gif');position: absolute;width:100%;height:100%; background-repeat: no-repeat;background-position: center;z-index:1;}
 .SumoGallery .Sbody a.anim{transition: all 200ms;-webkit-transition: all 200ms;-moz-transition: all 200ms;}
 .SumoGallery .Sbody a.left{left: -100%;opacity: 0;}
 .SumoGallery .Sbody a.right{left: 100%;opacity: 0;}
