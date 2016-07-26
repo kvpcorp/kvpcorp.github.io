@@ -1,36 +1,41 @@
 /*  BootStrap Overide css Start   */
 
-.yamm .nav,
-.yamm .collapse,
-.yamm .dropup,
-.yamm .dropdown {
-  position: static;
+.yamm .nav, .yamm .collapse, .yamm .dropup, .yamm .dropdown {
+	position: static;
 }
 .yamm .container {
-  position: relative;
+	position: relative;
 }
 .yamm .dropdown-menu {
-  left: auto;
+	left: auto;
 }
 .yamm .yamm-content {
-  padding: 20px 30px;
+	padding: 20px 30px;
 }
 .yamm .dropdown.yamm-fw .dropdown-menu {
-  left: 0;
-  right: 0;
+	left: 0;
+	right: 0;
 }
-.dropdown-menu{ top:inherit; background:#F5F4F1!important}
-.thumbnail{ text-align:left; background:none; border:none;color:#002561; opacity:0.5;}
-.thumbnail:hover{ opacity:1;}
+.dropdown-menu {
+	top: inherit;
+	background: #F5F4F1!important
+}
+.thumbnail {
+	text-align: left;
+	background: none;
+	border: none;
+	color: #002561;
+	opacity: 0.5;
+}
+.thumbnail:hover {
+	opacity: 1;
+}
 .mission-tabs li {
-  float: left;
+	float: left;
 }
 .dn {
-    display: none !important;
+	display: none !important;
 }
-
-
-
 body {
 	font-family: 'Muli', sans-serif;
 	margin: 0;
@@ -109,18 +114,22 @@ a:focus {
 .our_inner .line {
 	border-right: 1px solid #444444;
 	margin: 0 15px;
-	opacity: 0.5;line-height: 75px;
+	opacity: 0.5;
+	line-height: 75px;
 }
 .ourmission li.active .our_m {
-  color:#EC1C24;
+	color: #EC1C24;
 }
-.ourmission li:hover .our_m{ color:#EC1C24;}
+.ourmission li:hover .our_m {
+	color: #EC1C24;
+}
 .ourmission p {
-  float: left;
-  font-size: 28px;
-  font-weight: 100;
-  padding: 0 15px 0 0;
-  width: 65%;color: #444;
+	float: left;
+	font-size: 28px;
+	font-weight: 100;
+	padding: 0 15px 0 0;
+	width: 65%;
+	color: #444;
 }
 .dropdown:hover .dropdown-menu {
 	display: block;
@@ -365,7 +374,7 @@ a:focus {
 }
 /*input Design */
 
-.newletter input[type="text"],.family input[type="text"],.family input[type="email"],.newletter input[type="email"], .enquiry input[type="text"], .enquiry input[type="email"], .enquiry input[type="tel"] {
+.newletter input[type="text"], .family input[type="text"], .family input[type="email"], .newletter input[type="email"], .enquiry input[type="text"], .enquiry input[type="email"], .enquiry input[type="tel"] {
 	padding: 0 0 5px 10px;
 	background: transparent;
 	width: 100%;
@@ -617,11 +626,39 @@ label.error {
 .head-divider {
 	border-top: 1px solid #474644;
 }
-
 /*application End */
 
-.news_title{ color:#444444; font-size:18px; font-weight:400;}
+.news_title {
+	color: #444444;
+	font-size: 18px;
+	font-weight: 400;
+}
+.termsandconditions h2 {
+	font-size: 21px;
+	font-family: "Muli", sans-serif !important;
+	font-weight: 400;
+	color: #002561;
+}
+.termsandconditions ul {
+	padding: 0;
+}
+.termsandconditions li {
+	font-size: 16px;
+	font-family: "Muli", sans-serif !important;
+	font-weight: 100;
+	color: #444;
+	list-style: none;
+	padding-bottom: 5px;
+}
+.termsandconditions .modal-body {
+	height: 400px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	padding: 0 20px;
+}
 
+.termsandconditions .modal-title{color:#EC1C24; font-size:22px;}
+.termsandconditions .checkbox label{ font-size:16px;line-height: 17px; font-weight:400; color:#444;}
 
 @media screen and (min-width: 100px) and (max-width: 600px) {
 .subscribe_btn, .emergency_btn {
@@ -631,15 +668,12 @@ label.error {
 	padding: 5px 15px;
 	width: 100%;
 }
-.logo {
+.logo img {
 	width: 75%;
 }
 .navbar-toggle {
 	left: 16px;
-	top: -234px;
+	top: -106px;
 	z-index: 99999;
 }
 }
-
-
-
