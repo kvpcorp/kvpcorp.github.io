@@ -1,5 +1,7 @@
 /*  BootStrap Overide css Start   */
-
+.text-center {
+  text-align: center !important;
+}
 .yamm .nav, .yamm .collapse, .yamm .dropup, .yamm .dropdown {
 	position: static;
 }
@@ -181,6 +183,8 @@ a:focus {
 	line-height: 25px;
 	margin-bottom: 15px;
 }
+
+
 .h_icon_section p {
 	color: #444444;
 	font-size: 18px;
@@ -489,7 +493,13 @@ a:focus {
 	line-height: 28px;
 }
 /*partner end*/
-
+.ser_s_title{color:#EC1C24; font-size: 48px; font-weight:400; }
+.services_section p{ 
+	color: #444444;
+	font-size: 22px;
+	font-weight: 100;
+	 line-height: 35px;
+    padding: 15px 0 8px 0;}
 .adv_name {
 	color: #002561;
 	font-size: 28px;
@@ -592,11 +602,29 @@ a.add_wishlist {
 	border-radius: 0;
 	font-weight: 100;
 }
-.enquiry select, .contact select {
+
+
+.services_section input[type="text"],.services_section input[type="email"]{
+	box-shadow: none;
+	border-radius: 0;
+	font-weight: 100;
+	padding: 0 0 5px 10px;
+	background: transparent;
+	width: 100%;
+	border-bottom: 1px solid #474644!important;
+	color: #A6A6A4;
+	font-size: 18px;
+	border: none;
+	}
+	.ser_s_enq{ color:#002561;  border:1px solid #002561;  font-size: 24px;
+    font-weight: 400;
+    padding: 0 0 5px;
+    text-align: center;}
+.enquiry select, .contact select,.services_section select {
 	width: 100%;
 	background: transparent;
 	border: 1px solid #474644;
-	padding: 6px 10px;
+	padding: 6px 10px; font-size:18px;color: #A6A6A4;
 }
 .contact input[type="text"], .contact input[type="email"] {
 	padding: 0 0 5px 10px;
