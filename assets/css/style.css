@@ -25,10 +25,10 @@
 	background: none;
 	border: none;
 	color: #002561;
-	opacity: 0.5;
+	opacity: 1;
 }
 .thumbnail:hover {
-	opacity: 1;
+	opacity: 0.8;
 }
 .mission-tabs li {
 	float: left;
@@ -50,10 +50,15 @@ body {
 a:focus {
 	outline: none;
 }
+
+.nav li{  margin-bottom: 15px;
+    margin-top: 10px;padding: 0 0 0 15px;}
+	
 .nav > li > a:focus, .nav > li > a:hover {
 	background-color: transparent;
-	text-decoration: none;
+	text-decoration: none; border:1px solid #EC1C24;
 }
+.nav > li > a:hover i{ color:#EC1C24;}
 /*  BootStrap Overide css End */
 
 
@@ -97,7 +102,8 @@ a:focus {
 	font-weight: 400;
 	color: #002561;
 	font-size: 15px;
-	padding: 10px 0 20px 45px;
+	 border: 1px solid rgba(0, 0, 0, 0);
+	 padding: 10px 15px;
 }
 .our_inner {
 	padding: 20px 0;
@@ -129,7 +135,7 @@ a:focus {
 	font-weight: 100;
 	padding: 0 15px 0 0;
 	width: 65%;
-	color: #444;
+	color: #444;padding: 0 50px 0 0;   text-align: justify;
 }
 .dropdown:hover .dropdown-menu {
 	display: block;
@@ -633,6 +639,12 @@ label.error {
 	font-size: 18px;
 	font-weight: 400;
 }
+.news_years {
+	color: #002561;
+	font-size: 20px;
+	font-weight: 400;
+}
+.news_section img{ cursor:pointer; border:1px solid #002561;}
 .termsandconditions h2 {
 	font-size: 21px;
 	font-family: "Muli", sans-serif !important;
@@ -672,8 +684,7 @@ label.error {
 	width: 75%;
 }
 .navbar-toggle {
-	left: 16px;
-	top: -106px;
-	z-index: 99999;
+	
+
 }
 }

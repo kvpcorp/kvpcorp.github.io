@@ -16,7 +16,7 @@
         settings: {
             sattr: 'data-sgallery', // attrribute on image to be looked by plugin. by which we can set group name.
             showImgCount: true,       //display image counts on bottom right
-            showThumbs: false
+            showThumbs: true
         },
 
         //bind all generic events here.
