@@ -880,6 +880,16 @@ color:#002561;
 .collapsed .fw400{ font-weight:100!important;}
 .fw400{ font-weight:400!important;}
 .career_title{ float:left;    font-size: 24px; font-weight:100; color:#444;}
+
+.medical_table tr{ border-bottom:1px solid #b2b2b1;}
+.medical_table {font-size: 18px; font-weight:100; color:#444;width: 100%;}
+.medical_table  tr:nth-child(even) {background:#f4f4f2;}
+.medical_table  tr:nth-child(odd) {background:#fff;}
+.medical_table td, .medical_table th {
+  padding: 5px 10px;
+  width: 50%;
+}
+
 @media screen and (min-width: 100px) and (max-width: 600px) {
 .subscribe_btn, .emergency_btn {
 	display: inline-block;
