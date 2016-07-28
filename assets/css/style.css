@@ -663,7 +663,7 @@ a.add_wishlist {
 	width: 100%;
 	background: transparent;
 	border: 1px solid #474644;
-	padding: 6px 10px; font-size:18px;color: #A6A6A4;
+	padding: 6px 10px; font-size:14px;color: #A6A6A4;
 }
 .contact input[type="text"], .contact input[type="email"] {
 	padding: 0 0 5px 10px;
@@ -742,6 +742,128 @@ label.error {
 color:#002561;
     font-size: 20px;
     font-weight: 400;}
+	
+	
+
+/* floating box style */
+.floating-form {
+	top: 0;
+    max-width: 300px;
+    padding: 15px 20px 20px;
+	font-size:18px;
+    font-family: "Muli", sans-serif !important;
+    background: #fff;
+    border: 1px solid #ddd;
+    right: 10px;
+    position: fixed; z-index:9999999;
+    
+	}
+	#contact_body button {
+  font-size: 18px; text-align:center;
+}
+.contact-opener {
+	font-family: "Muli", sans-serif !important;
+    position: absolute;
+    left: -82px;
+    transform: rotate(-90deg);
+    top: 100px;
+    background-color: #1A2F69;
+    padding: 9px;
+    color: #fff;
+	font-size:28px;
+	
+    cursor: pointer;
+    
+
+}
+.floating-form-heading{
+    font-weight: 400;
+    font-family: "Muli", sans-serif !important;
+   
+    margin-bottom: 10px;
+    font-size: 24px;
+    padding-bottom: 3px;
+}
+.floating-form label{
+    display: block;
+    margin: 0px 0px 15px 0px; font-family: "Muli", sans-serif !important;
+}
+.floating-form label > span{
+    width: 70px;
+    font-weight: bold;
+    float: left;
+    padding-top: 8px;
+    padding-right: 5px;
+}
+.floating-form span.required{
+    color:red;
+}
+.floating-form .tel-number-field{
+    width: 40px;
+    text-align: center;
+}
+.floating-form  .long{
+    width: 120px;
+}
+.floating-form input.input-field{
+    width: 68%;
+   
+}
+
+.floating-form input.input-field,
+.floating-form .tel-number-field,
+.floating-form .textarea-field,
+ .floating-form .select-field{
+   
+    border: 1px solid #C2C2C2;
+   
+    padding: 7px;
+    outline: none;
+}
+.floating-form .input-field:focus,
+.floating-form .tel-number-field:focus,
+.floating-form .textarea-field:focus,  
+.floating-form .select-field:focus{
+    border: 1px solid #0C0;
+}
+.floating-form .textarea-field{
+    height:100px;
+    width: 68%;
+}
+.floating-form input[type="button"],
+.floating-form input[type="submit"], .contact-opener {
+    
+    cursor: pointer;
+    color: #FFFFFF;
+   text-align:center;
+    text-decoration: none;
+    font-size: 18px!important;
+}
+.floating-form input[type="button"]:hover,
+.floating-form input[type="submit"]:hover, .contact-opener {
+    
+    background-color: #EC1C24;
+}
+.floating-form .success{
+	background: #D8FFC0;
+	padding: 5px 10px 5px 10px;
+	margin: 0px 0px 5px 0px;
+	border: none;
+	font-weight: bold;
+	color: #2E6800;
+	border-left: 3px solid #2E6800;
+}
+.floating-form .error {
+	background: #FFE8E8;
+	padding: 5px 10px 5px 10px;
+	margin: 0px 0px 5px 0px;
+	border: none;
+	font-weight: bold;
+	color: #FF0000;
+	border-left: 3px solid #FF0000;
+}	
+	
+	
 @media screen and (min-width: 100px) and (max-width: 600px) {
 .subscribe_btn, .emergency_btn {
 	display: inline-block;

@@ -269,6 +269,56 @@
     </div>
   </div>
 </div>
+
+<!-- contact form start -->
+<div class="floating-form" id="contact_form">
+<div class="contact-opener"><i class="fa fa-phone" aria-hidden="true"></i> Call Back</div>
+    <div class="floating-form-heading">Schedule a Callback</div>
+    <div id="contact_results"></div>
+    <div id="contact_body">
+        <div class="enquiry">
+        <div class="row">
+        <form method="post" data-remote="true" accept-charset="UTF-8" action="/enquiries/callback" class="simple_form callback" novalidate="novalidate" autocomplete="off" id="callback_schedule_form"><input type="hidden" value="✓" name="utf8"><div class="col-md-12">
+<div class="form-group">
+<div class="form-group string required callback_name" aria-required="true"><input type="text" id="callback_name" name="callback[name]" placeholder="Name" class="string required form-control" aria-required="true"></div>
+</div>
+</div>
+<div class="col-md-12">
+<div class="form-group">
+<div class="form-group tel required callback_phone_number" aria-required="true"><input type="tel" id="callback_phone_number" name="callback[phone_number]" size="10" placeholder="Mobile" class="string tel required form-control" maxlength="10" aria-required="true"></div>
+</div>
+</div>
+<div class="col-md-12">
+<div class="form-group">
+<select id="callback_available_slot" name="callback[available_slot]" class="select required" prompt="Select Your Available Time Slot" aria-required="true"><option value="">Select Your Available Time Slot</option>
+<option value="08:00 AM to 10:00 AM">08:00 AM to 10:00 AM</option>
+<option value="10:00 AM to 12:00 PM">10:00 AM to 12:00 PM</option>
+<option value="12:00 PM to 02:00 PM">12:00 PM to 02:00 PM</option>
+<option value="02:00 PM to 04:00 PM">02:00 PM to 04:00 PM</option>
+<option value="04:00 PM to 06:00 PM">04:00 PM to 06:00 PM</option>
+<option value="06:00 PM to 08:00 PM">06:00 PM to 08:00 PM</option></select>
+<i class="bar"></i>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="col-md-6 mt30">
+<button id="#enquiry_reset_button" class="reset_btn" type="reset" name="button">Reset</button>
+</div>
+<div class="col-md-6 mt30">
+<input type="submit" id="schedule_submit" class="sub_btn" value="Submit" name="commit">
+</div>
+<div class="col-md-4 mt3"></div>
+</form>
+        </div>
+        </div>
+       
+
+        	
+    </div>
+</div>
+<!-- contact form end -->
+
+
 <!--Footer Section Start -->
 <div class="footer">
   <div class="container">
@@ -393,6 +443,89 @@
 <script src="assets/js/docs.min.js"></script> 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
 <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+
+	var _scroll = true, _timer = false, _floatbox = $("#contact_form"), _floatbox_opener = $(".contact-opener") ;
+	_floatbox.css("right", "-300px"); //initial contact form position
+	
+	//Contact form Opener button
+	_floatbox_opener.click(function(){
+		if (_floatbox.hasClass('visiable')){
+            _floatbox.animate({"right":"-300px"}, {duration: 300}).removeClass('visiable');
+        }else{
+           _floatbox.animate({"right":"0px"},  {duration: 300}).addClass('visiable');
+        }
+	});
+	
+	//Effect on Scroll
+	$(window).scroll(function(){
+		if(_scroll){
+			_floatbox.animate({"top": "30px"},{duration: 300});
+			_scroll = false;
+		}
+		if(_timer !== false){ clearTimeout(_timer); }           
+			_timer = setTimeout(function(){_scroll = true; 
+			_floatbox.animate({"top": "10px"},{easing: "linear"}, {duration: 500});}, 400); 
+	});
+	
+	
+	//Ajax form submit
+    $("#submit_btn").click(function() { 
+        var proceed = true;
+        //simple validation at client's end
+        //loop through each field and we simply change border color to red for invalid fields       
+        $("#contact_form input[required=true], #contact_form textarea[required=true]").each(function(){
+            $(this).css('border-color',''); 
+            if(!$.trim($(this).val())){ //if this field is empty 
+                $(this).css('border-color','red'); //change border color to red   
+                proceed = false; //set do not proceed flag
+            }
+            //check invalid email
+            var email_reg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/; 
+            if($(this).attr("type")=="email" && !email_reg.test($.trim($(this).val()))){
+                $(this).css('border-color','red'); //change border color to red   
+                proceed = false; //set do not proceed flag              
+            }   
+        });
+       
+        if(proceed) //everything looks good! proceed...
+        {
+            //get input field values data to be sent to server
+            post_data = {
+                'user_name'     : $('input[name=name]').val(), 
+                'user_email'    : $('input[name=email]').val(), 
+                'country_code'  : $('input[name=phone1]').val(), 
+                'phone_number'  : $('input[name=phone2]').val(), 
+                'subject'       : $('select[name=subject]').val(), 
+                'msg'           : $('textarea[name=message]').val()
+            };
+            
+            //Ajax post data to server
+            $.post('contact_me.php', post_data, function(response){  
+                if(response.type == 'error'){ //load json data from server and output message     
+                    output = '<div class="error">'+response.text+'</div>';
+                }else{
+                    output = '<div class="success">'+response.text+'</div>';
+                    //reset values in all input fields
+                    $("#contact_form  input[required=true], #contact_form textarea[required=true]").val(''); 
+                }
+                $("#contact_form #contact_results").hide().html(output).slideDown();
+            }, 'json');
+        }
+    });
+    
+    //reset previously set border colors and hide all message on .keyup()
+    $("#contact_form  input[required=true], #contact_form textarea[required=true]").keyup(function() { 
+        $(this).css('border-color',''); 
+        $("#result").slideUp();
+    });
+	
+});
+</script>
+
 
 <!--Footer Setion End --> 
     <script>
