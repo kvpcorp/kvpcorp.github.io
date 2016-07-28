@@ -862,8 +862,24 @@ color:#002561;
 	color: #FF0000;
 	border-left: 3px solid #FF0000;
 }	
+	#accordion p{
+		color: #444444;
+	font-size: 24px;
+	font-weight: 100;
 	
-	
+		}
+		
+	#accordion .panel {
+  border-bottom: 1px solid rgb(0, 0, 0);
+  border-radius: 0;
+  box-shadow: none;     padding: 15px 0;
+}
+#accordion .panel-body {
+  margin-top: 20px;
+}
+.collapsed .fw400{ font-weight:100!important;}
+.fw400{ font-weight:400!important;}
+.career_title{ float:left;    font-size: 24px; font-weight:100; color:#444;}
 @media screen and (min-width: 100px) and (max-width: 600px) {
 .subscribe_btn, .emergency_btn {
 	display: inline-block;
