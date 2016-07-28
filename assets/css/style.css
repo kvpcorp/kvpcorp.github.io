@@ -60,6 +60,8 @@ a:focus {
 	background-color: transparent;
 	text-decoration: none; border:1px solid #EC1C24;
 }
+.mission-tabs li a:focus,.mission-tabs li a:hover{ border:none;}
+
 .nav > li > a:hover i{ color:#EC1C24;}
 /*  BootStrap Overide css End */
 
@@ -426,6 +428,43 @@ a:focus {
 }
 /* Slideer css End */
 
+/*how it work tab start*/
+
+
+.howitwork_tab li {
+	float: left;
+	list-style-type: none;
+}
+.howitwork_tab li.active a {
+	background-color: #002561;
+	color: #fff;
+	text-decoration: none;
+}
+.howitwork_tab li a {
+	background-color: #F5F4F1;
+	color: #002561;
+	font-size: 16px;
+	 padding: 5px 85px;
+	margin-right: 20px; line-height:50px;
+}
+.howitwork_tab li a:hover {
+	text-decoration: none;
+}
+.howitwork_tab {
+	background: none!important;
+}
+
+.howitwork_tab {
+	margin-bottom: 70px;
+	margin-top: 25px;
+	padding: 0;
+}
+
+.howitwork_tab p{ font-size:22px; font-weight:100; color:#444; text-align:justify;}
+.howitwork_stage{ color:#EC1C24; font-size:28px; font-weight:400;padding: 5px 0;}
+.howitwork_title{color:#002561; font-size:28px; font-weight:400; padding-bottom: 25px;}
+/*how it work tab end*/
+
 
 /*faq Start*/
 
@@ -699,7 +738,10 @@ label.error {
 
 .termsandconditions .modal-title{color:#EC1C24; font-size:22px;}
 .termsandconditions .checkbox label{ font-size:16px;line-height: 17px; font-weight:400; color:#444;}
-
+.career_current{ 
+color:#002561;
+    font-size: 20px;
+    font-weight: 400;}
 @media screen and (min-width: 100px) and (max-width: 600px) {
 .subscribe_btn, .emergency_btn {
 	display: inline-block;
