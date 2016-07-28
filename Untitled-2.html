@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<style type='text/css'>
+   .form_input {
+    box-sizing: border-box;
+    float: left;
+    max-width: 100%;
+    padding: 0 135px 0 0;
+    position: relative;
+    width: 70%;
+   }
+   .placeholder {
+    color: #666;
+    left: 2px;
+    font-size: 14px;
+    font-weight: 400;
+    left: 0;
+    position: absolute;
+    top: 20px;
+    transition: 0.3s ease;
+    
+    z-index: 7;
+   }
+   .input_text {
+    border: none;
+    border-bottom: 1px solid #999;
+    font-size: 15px;
+    font-weight: 400;
+    height: 50px;
+    line-height: 50px;
+    padding: 15px 0 0 0;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+   
+    position: relative;
+    z-index: 9;
+    background: none;
+   }
+   .added-placeholder .placeholder {
+    top: 0;
+    font-size: 12px;
+   }
+  </style>
+
+
+
+<div class="form_input"> 
+   <span class="placeholder">Enter your domain name:</span>
+   <input class="input_text" placeholder="" type="text">
+  </div>
+<script src="assets/js/jquery.min.js"></script> 
+<script type="text/javascript">
+ $(document).ready(function(){
+   $('.input_text').val(null);
+   
+   $('input').on('blur', function(){
+     var getTextval=$(this).val()
+     if(getTextval == "" || getTextval == null){
+
+     $(this).parent().removeClass('added-placeholder');
+     }
+     else{$(this).parent().addClass('added-placeholder')}
+   }).on('focus', function(){
+    var getTextval=$(this).val()
+    if(getTextval == "" || getTextval == null){
+     $(this).parent().removeClass('').addClass('added-placeholder');
+    }
+    else{$(this).parent().addClass('added-placeholder')}
+   });
+ })
+</script>
+</body>
+</html>
