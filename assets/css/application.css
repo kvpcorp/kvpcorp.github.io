@@ -1,0 +1,366 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require bootstrap
+ *= require daterangepicker-bs3
+ *= require bootstrap-datetimepicker
+ *= require bootstrap-datepicker3
+ *= require jquery-ui/datepicker
+ *= require common/ie10-viewport-bug-workaround
+ *= require common/sumogallery
+ *= require common/font-awesome
+ *= require intlTelInput
+ */
+
+/*Family Subscription  CSS start*/
+.stage_ul li{
+  list-style-type: circle !important;
+  float: none !important;
+}
+.input-group-addon{
+    background: none;
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 0;
+}
+.loader,.loader-pin{top: -42px;
+    position: relative;
+    float: right;
+}
+
+#partner_description{
+    padding: 15px;
+}
+
+.family-labels label{
+    font-size: 16px;
+    font-weight: normal;
+    color: #999;
+}
+
+.members-count{
+  border: 1px solid #DDD;
+    border-radius: 5px;
+
+}
+
+input#enquiry_number_of_adults, input#enquiry_number_of_children{
+    border-bottom: 0px !important;
+}
+
+
+#loading_image {
+    display: none;
+    position: absolute;
+    top: 36%;
+    left: 1%;
+    right: 1%;
+    margin: auto;
+}
+.services_section input[type="tel"]{
+  padding: 0 0 5px 10px;
+  background: transparent;
+  width: 100%;
+  border-bottom: 1px solid #474644!important;
+  color: #A6A6A4;
+  font-size: 18px;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+.services_section textarea {
+  border: 1px solid #474644!important;
+  box-shadow: none;
+  border-radius: 0;
+  min-height: 100px;
+}
+
+.bootstrap-datetimepicker-widget{
+  bottom: 120px !important;
+}
+
+
+#payment_btn input[type='submit'] {
+  color: #fff;
+  background-color: #C1D613;
+  border-color: #C1D613;
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin-right: 15px;
+
+}
+#payment_btn input[type='submit']:focus,
+#payment_btn input[type='submit'].focus{
+  color: #444;
+  background-color: #c9302c;
+  border-color: #761c19;
+}
+#payment_btn input[type='submit']:hover {
+  color: #fff;
+  background-color: #797979;
+  border-color: #797979;
+}
+
+#messageModal .modal-header .close ,#termsandconditions .modal-header .close{
+    color: #fff;
+    opacity: 1;
+    font-size: 30px;
+}
+#messageModal .modal-header,#termsandconditions .modal-header {
+    padding: 10px 15px;
+    border-bottom: 1px solid #e5e5e5;
+    background: #002561;
+    color: #fff;
+}
+
+#messageModal .modal-body{
+    padding: 55px 15px;
+    text-align: center;
+    min-height: 200px;
+    font-size: 24px;
+}
+
+#payment_success .panel-heading {
+    background: #A6E214;
+    color: #fff;
+    font-size: 25px;
+}
+
+#payment_success .panel-body,#payment_failure .panel-body {
+    min-height: 150px;
+    font-size: 20px;
+    line-height: 35px;
+}
+#payment_success li {
+    list-style: none;
+    padding: 5px 20px;
+}
+#payment_success label {
+    min-width: 200px;
+}
+
+#payment_failure .panel-heading {
+    background: #EC1C24;
+    color: #fff;
+    font-size: 25px;
+}
+#payment_failure li {
+  list-style: none;
+  text-align: center;
+  padding: 50px 0px;
+}
+
+.enquiry select, .contact select, .services_section select {
+  color: #040404 !important;
+}
+
+.tax-stmt{
+  font-size: 12px;
+  color: #999;
+}
+
+#news_letter_form .sub_btn {
+  padding: 2px 20px;
+}
+.enquiry select, .contact select, .services_section select {
+  color: #040404 !important;
+}
+
+.career_section .career_page_description{
+  color: #444444;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 30px;
+}
+.career-header {
+  border-bottom: 1px solid black;
+  padding-bottom: 15px;
+}
+#accordion ul, .services_section ul{
+  color: #444444;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 30px;
+}
+.panel-sub-head {
+  color: #444444;
+  font-size: 24px;
+  font-weight: 500;
+}
+.sub-menu-placeholder {
+    height: 20px;
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+
+}
+.dropdown .dropdown-menu {
+    padding-top: 0px;
+    border-top: 1px;
+    box-shadow: none;
+}
+
+ #lead_enquiry_form #enquiry_dob
+ {
+ font-size: 14px;
+ }
+
+ .family_fare_overseas {
+  color: #EC1C24;
+  font-size: 28px;
+  font-weight: 100;
+}
+#lead_enquiry_form #enquiry_dob{
+ font-size: 14px;
+}
+
+
+#contact-close
+{
+color:#EC1C24;
+cursor: pointer;
+}
+
+
+/*.modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.modal-content {
+  height: 100%;
+  border-radius: 0;
+}
+*/
+.media{
+  margin-left : 15px;
+}
+
+.blog_title {
+    color: #002561;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.blog_more a{color: #ec1c24;width: 200px;background-color: transparent;
+    border: 1px solid #ec1c24;
+
+    float: right;
+    font-family: "Muli",sans-serif !important;
+    font-size: 13px;
+    margin-top: 10px;
+    padding: 10px 25px 8px;
+    text-align: center;
+    text-shadow: none;
+    }
+.blog_desc{color: #444444;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+    }
+
+.blog_btn{
+
+    background: #ec1c24 none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    font-size: 21px;
+    padding: 5px 20px;
+    text-align: center;
+
+}
+.blog_next{
+ background: #002561 none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    font-size: 21px;
+    padding: 5px 20px;
+    text-align: center;
+
+}
+.blog_next:hover,.blog_next:focus{ background: #ec1c24; color:#fff; text-decoration: none; }
+
+.blog_btn:hover,.blog_btn:focus{ background: #002561; color:#fff; text-decoration: none; }
+
+
+/*scroll top*/
+
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    background: #f5f5f5;
+    color: #444;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+}
+#back-to-top:hover {
+    background: #022561;
+}
+#back-to-top.show {
+    opacity: 1;
+}
+#back-to-top
+{
+  font-size: 22px !important;
+ background-color:#022561;
+ color: #fff;
+}
+.dom_inner_f, .nri_inner_f, .over_inner_f
+{
+  display: none;
+}
+.over_foot i,.dom_foot i,.nri_foot i
+{color:#ec1c24;cursor: pointer;}
+
+.advisory p{
+  text-align: justify;
+font-size: 18px !important;
+}
+
+
+.blog_floated{
+  float: left;
+  padding: 0px 25px 25px 0px;
+}
+
+
+.datepicker table tr td{
+  border-radius: 0px !important;
+}
+.active-day
+{
+   background: #3fa8da;
+   color: #fff;
+}
+
+.day.active-day:hover
+{
+   color: #006dcc;
+background-color: #006dcc;
+outline: 1px solid #000;
+}
