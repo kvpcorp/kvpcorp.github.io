@@ -1,0 +1,280 @@
+
+@media screen and (min-width: 769px) {
+  #navbar {
+    padding: 15px 0 0;
+    margin: auto
+  }
+ .h_nav{display:flex}
+}
+
+@media screen and (min-width: 100px) and (max-width: 650px) {
+.carousel_btn{ float: inherit;}
+  .mmtz{margin-top: 0;}
+  .mmbz{margin-bottom: 0;}
+  .faq-tab li a {
+  text-align: center;
+  width: 150px;display: inline-block;
+}
+  .carousel_horizontal.carousel-caption h2{ display: none;}
+  .carousel_horizontal.carousel-caption p{ display: none;}
+  .carousel_horizontal.carousel-caption{padding: 2% !important;}
+.sub-menu-placeholder{height: 0;}
+/*.dropdown-menu {
+    display: none !important;
+}*/
+
+.open .dropdown-menu {
+    display: block !important;
+}
+
+  .ser_s_title {
+    font-size: 30px;
+  }
+  .enquiry_title {
+    font-size: 30px;
+  }
+  .tabbable .nav li a{ font-size: 12px; }
+  .carousel_btn {
+    display: inline-block;
+    float: left;
+    font-family: "Muli",sans-serif !important;
+    font-size: 10px;
+    margin-bottom: 5px;
+    padding: 2px 5px;
+    text-align: center;
+    text-shadow: none; margin-right: 5px;
+  }
+  .howitwork_tab p {
+    font-size: 18px;
+  }
+  .howitwork_tab li a {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  padding: 5px 0;
+  text-align: center;
+  width: 95%;
+}
+.faq-tab li{width: 50%;}
+.faq-tab li a{ display: inline-block;
+    text-align: center;
+    width: 95%;}
+  .howitwork_title {
+    font-size: 24px;
+  }
+  .about_title{
+    font-size: 32px;
+  }
+  .howitwork_tab li{width: 50%;}
+  .enquiry-btn{
+    margin-left: 0;
+    display: inline-block;
+    float: left;
+    font-family: "Muli",sans-serif !important;
+    font-size: 10px;
+    margin-bottom: 0;
+    padding: 2px 5px;
+    text-align: center;
+    text-shadow: none;
+  }
+  .enquiry-btn-km{
+    margin-left: 0;
+    display: inline-block;
+    float: left;
+    font-family: "Muli",sans-serif !important;
+    font-size: 10px;
+    margin-bottom: 0;
+    padding: 2px 5px;
+    text-align: center;
+    text-shadow: none;
+    width:175px;
+  }
+  .subscribe_btn, .emergency_btn 
+  {
+    display: inline-block;
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    width: 100%;
+  }
+  .logo img {
+    width: 100%;
+  }
+  .our_inner .line {
+    line-height: 28px;
+
+  }
+  .tab-content {
+    margin: 0;
+    padding: 0 16px;
+  }
+  .ourmission p {
+    padding: 0 16px;
+  }
+  .our_inner {
+    padding: 10px 0;
+  }
+  .floating-form{ right: -300px!important;}
+  .mmtb20{ margin: 20px 0;}
+  .mtext-center{ text-align: center;}
+  .floating-form.visiable {
+    right: 0 !important;
+  }
+  .ourmission {
+    padding: 0;
+  }
+  .our_inner span {
+    font-size: 22px;
+  }
+  .mission-tabs li a {
+    padding: 0 10px;
+  }
+  .ourmission p {
+   
+    font-size: 21px;
+    font-weight: 100;
+    line-height: 30px;
+
+    text-align: inherit;
+    width: 100%;
+  }
+  .carousel-caption h1{ font-size: 12px; margin: 0;}
+  .carousel-caption p{     font-size: 8px;
+    margin: 0;
+    line-height: 10px;
+    margin-bottom: 8px;}
+  .subscribe_btn{  
+    width: 100%;
+  }
+  .pull-none{ float: none!important;}
+  .tabbable li {
+    margin: 0;
+    padding: 0;
+  }
+  .tab-content {
+    line-height: 30px;
+    margin: 0;
+    padding: 10px 16px;
+  }
+  .yamm-content .thumbnail > img, .yamm-content .thumbnail a > img{ display: none;}
+  .yamm .yamm-content {
+    padding: 0;
+  }
+  li.yamm-fw li {
+    margin: 0 !important;
+    padding: 0;
+  }
+  .yamm-content .thumbnail {
+        padding: 5px 0 5px 15px;
+      text-align: left;border-radius: 0; margin-bottom: 0;
+  }
+  .yamm-content a.thumbnail:hover {
+    background: none repeat scroll 0 0 #444;
+    color: #fff;
+    opacity: 1;
+    text-decoration: none;
+  }
+  .navbar-nav {
+    margin: 0;
+    width: 100%;
+  }
+  .nav li {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .yamm .dropdown.yamm-fw .dropdown-menu {
+    width: 100%;
+  }
+  .floating-form {
+    top: 10px !important;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1100px){
+  .ourmission p {
+    font-size: 22px;
+    line-height: 35px;
+    padding: 0 25px 0 0;
+  }
+  .ourmission {
+    padding: 0;
+  }
+  .our_inner {
+    padding: 0;
+  }
+  .mmtb20{ margin: 20px 0;}
+  .footer_inner_menu {
+    min-height: 260px;
+  }
+  .carousel-caption h1{ font-size: 22px; }
+  .carousel-caption p{ font-size: 18px;}
+  .carousel_btn,.enquiry-btn {
+    font-size: 10px;
+    padding: 10px 12px;
+    
+  }
+  .carousel_btn,.enquiry-btn {  
+    display: inline-block;
+    float: left;
+    font-family: "Muli",sans-serif !important;
+    font-size: 15px;
+    margin-bottom: 15px;
+    min-width: 200px;
+    padding: 10px 25px;
+    text-align: center;
+    text-shadow: none;
+  }
+  .enquiry-btn{
+    margin-left: 0;
+    display: inline-block;
+    float: left;
+    font-family: "Muli",sans-serif !important;
+    font-size: 15px;
+    margin-bottom: 15px;
+    min-width: 200px;
+    padding: 10px 25px;
+    text-align: center;
+    text-shadow: none;
+
+  }
+  .navbar-nav > li > a {
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1300px){
+  .carousel_btn,.enquiry-btn {
+    display: inline-block;
+    float: left;
+    font-family: "Muli",sans-serif !important;
+    font-size: 15px;
+    margin-bottom: 15px;
+    min-width: 200px;
+    padding: 10px 25px;
+    text-align: center;
+    text-shadow: none;
+  }
+  .enquiry-btn{
+    margin-left: 0;
+    display: inline-block;
+    float: left;
+    font-family: "Muli",sans-serif !important;
+    font-size: 15px;
+    margin-bottom: 15px;
+    min-width: 200px;
+    padding: 10px 25px;
+    text-align: center;
+    text-shadow: none;
+  }
+   .carousel_btn, .enquiry-btn{
+       position: fixed;
+       bottom:0;
+    }
+    a.carousel_btn {
+       bottom: 55px !important;
+    }
+
+}
