@@ -1440,4 +1440,11 @@ ol.carousel-indicators li {
 .up_dropdown .dropdown-menu > li > a:focus, .up_dropdown .dropdown-menu > li > a:hover
 { background-color:#fff; color:#162F62!important;
 	}
+	.up_table_scroll {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.up_title{   color: #ec1c24;
+    font-size: 36px;
+    font-weight: 400;}
 /*User Portal CSS End */
