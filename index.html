@@ -1,477 +1,278 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<meta name="description" content="">
-<meta name="author" content="">
-<link rel="icon" href="assets/images/favicon.ico">
-<title>Welcome :: Aviators Air Rescue</title>
+<title>Landing Page</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+<style type="text/css">
+.l_container {
+	width: 1000px;
+	margin: 0 auto;
+}
+p,.form_group {
+	font-family: 'Open Sans', sans-serif;
+}
+.l_slider {
+	position: relative;
+}
+.l_form {
+	position: absolute;
+	right: 30px;
+	top: 30px;
+}
+.l_form input[type="text"], .l_form input[type="email"], .l_form input[type="number"] {
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+	font-family: 'Open Sans', sans-serif;
+	width: 204px;
+	font-size: 14px;
+}
 
-<!-- Bootstrap core CSS -->
-<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
-<link href='https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic' rel='stylesheet' type='text/css'/>
-<!-- Custom styles for this template -->
-<link href="assets/css/style.css" rel="stylesheet">
-<link href="assets/css/media.css" rel="stylesheet">
+.l_form .form_group {
+	margin-bottom: 10px;
+}
+.l_form input[type="button"]:hover{ background-color:#1E2C5F;}
+.l_form input[type="button"] {
+	background-color: #eb2127;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 16px;
+	padding: 5px;
+	cursor: pointer;
+font
+}
+.l_block {
+	border: 2px solid #eb2127;
+	position: relative;
+	width: 335px;
+	height: 190px;
+	float: left;
+	margin: 40px 70px;
+}
+.l_img {
+	background: #1e2c5f none repeat scroll 0 0;
+	border-radius: 50%;
+	height: 75px;
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	width: 75px;
+	top: -35px;
+}
+.l_img > img {
+	padding: 6px;
+}
+.l_block ul {
+ padding: 0 0 0 30px;
+	position: absolute;
+	top: 35px;
+	color: #1e2c5f;
+	font-family: 'Open Sans', sans-serif;
+}
+.l_block li {
+	color: #1e2c5f;
+	line-height: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+.l_footer {
+	position: relative;
+	border: 1px solid #ccc;
+	height: 50px; margin:35px 0;
+}
+.l_footer_nav {
+  display: inline-block;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 17px;
+  width: 620px;
+}
+.l_footer a {
+	font-family: 'Open Sans', sans-serif;
+	padding: 0 10px;
+		float: left;
+}
+.l_footer li:last-child {
+	border-right: none;
+}.l_footer_title {
+  background: #fff none repeat scroll 0 0;
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: -12px;
+  width: 200px;
+}	
+.l_sub_block {
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 10px 0;
+	margin-bottom: 10px;
+}
+.l_slider_text {
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+}
+.l_slider_text-1, .l_slider_text-2, .l_slider_text-3 {
+	color: #1e2c5f;
+	font-family: 'Open Sans', sans-serif;
+}
+.l_slider_text-1 {
+	font-size: 22px;
+	font-weight: bold;
+}
+.l_slider_text-2 {
+	font-size: 14px;
+}
+.l_slider_text-3 {
+	font-size: 18px;
+	font-weight: bold;
+}
+.cls {
+	clear: both;
+}
+.h_icon_title a {
+	color: #444444;
+	text-decoration: none;font-family: 'Open Sans', sans-serif;
+}
+.h_icon_title {
+	color: #002561;
+	font-size: 24px;
+	line-height: 25px;
+	margin-bottom: 15px;
+}
+.h_icon_section p {
+	color: #444444;
+	font-size: 18px;
+	font-weight: 100;
+}
+.l_how_block {
+	float: left;
+	margin-right: 1%;
+	width: 32%;
+}
+.l_how_left{ float:left; width:20%;}
+.l_how_right{ float:right; width:80%;}
+</style>
 </head>
 
-<body role="document">
-
-<!--Header Section Start -->
-<section class="container">
-  <div>
-    <div class="header_top">
-      <div class="h_top">
-        <div class="logo col-md-4"><a href="#"><img class="img-responsive" src="assets/images/logo.png" alt="Aviators Air Rescue"/></a></div>
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+<body >
+<div class="wrapper">
+  <div class="l_container">
+    <div class="l_header">
+      <div class="logo"> <img src="image/logo.png"/></div>
+    </div>
+    <div class="l_slider"> <img src="image/slider.jpg"/>
+      <div class="l_form">
+        <div class="form_group">
+          <input type="text" value="Name"/>
         </div>
-        <div class="col-md-4 col-md-offset-4 paddingnone">
-          <div id="custom-search-input" class="mt20">
-            <div class="col-md-4 text-right">
-              <label>LOGIN</label>
-            </div>
-            <div class="input-group col-md-8">
-              <input type="text" placeholder="Search" class="search-query form-control">
-              <span class="input-group-btn">
-              <button type="button" class="btn btn-blue"> <i class="fa fa-search" aria-hidden="true"></i> </button>
-              </span> </div>
-          </div>
+        <div class="form_group">
+          <input type="email" value="E-mail"/>
         </div>
-        <div class="clearfix"></div>
-        <div class="mt20 pull-right"><a class="subscribe_btn" href="">Subscribe Now</a> <a class="emergency_btn" href="">EMERGENCY</a></div>
+        <div class="form_group">
+          <input type="text" value="Contact Number"/>
+        </div>
+        <div class="form_group">
+          <input type="text" value="City"/>
+        </div>
+        <div class="l_sub_block">
+          <div class="form_group">
+            <input type="radio" value=""/>
+            Individual Subscription</div>
+          <div class="form_group">
+            <input type="radio" value=""/>
+            Family Subscription</div>
+        </div>
+        <div class="form_group">
+          <input type="button" value="REQUEST A CALL BACK >>"  />
+        </div>
+      </div>
+      <div class="l_slider_text">
+        <div class="l_slider_text-1">India's First</div>
+        <div class="l_slider_text-2">Subscription Based & Affordable</div>
+        <div class="l_slider_text-3">Air Ambulance Service</div>
       </div>
     </div>
-    <div class="clearfix"></div>
-    <div class="container">
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav yamm">
-          <li class="active"><a href="">Home</a></li>
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">How it Works<i class="fa fa-angle-down" aria-hidden="true"></i></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li><a href="#">Separated link</a></li>
-              <li><a href="#">One more separated link</a></li>
-            </ul>
-          </li>
-          <li><a href="">Plans</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Team</a></li>
-          <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Pictures <i class="fa fa-angle-down"> </i></a>
-            <ul class="dropdown-menu">
-              <li>
-                <div class="yamm-content">
-                  <div class="row">
-                    <div class="col-xs-6 col-sm-2"><a href="#" class="thumbnail"><img alt="150x190" src="assets/images/h-nav-charter-service.jpg"> Charter Service</a></div>
-                    <div class="col-xs-6 col-sm-2"><a href="#" class="thumbnail"><img alt="150x190" src="assets/images/h-nav-charter-service.jpg"> Charter Service</a></div>
-                    <div class="col-xs-6 col-sm-2"><a href="#" class="thumbnail"><img alt="150x190" src="assets/images/h-nav-charter-service.jpg"> Charter Service</a></div>
-                    <div class="col-xs-6 col-sm-2"><a href="#" class="thumbnail"><img alt="150x190" src="assets/images/h-nav-charter-service.jpg"> Charter Service</a></div>
-                    <div class="col-xs-6 col-sm-2"><a href="#" class="thumbnail"><img alt="150x190" src="assets/images/h-nav-charter-service.jpg"> Charter Service</a></div>
-                    <div class="col-xs-6 col-sm-2"><a href="#" class="thumbnail"><img alt="150x190" src="assets/images/h-nav-charter-service.jpg"> Charter Service</a></div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <li><a href="">Contact</a></li>
+    <div class="l_content">
+      <p>Aviators Air Rescue offers Emergency Transport of critically ill or injured patients where time is the essence to save the person's life or save him from permanent disability. We use  a combination of state-of-the-art dedicated rescue helicopters and highly trained medical teams to provide Emergency Transport, vital for trauma services </p>
+      <div class="l_block">
+        <div class="l_img"><img src="image/icon-1.png"/></div>
+        <ul>
+          <b>Individual Subscription</b>
+          <li>Up to INR 5 Lakh worth of Air Transport</li>
+          <li>Cover of up to INR 1 Lakh for Stabilization & Ground Ambulance</li>
         </ul>
       </div>
-      <!--/.nav-collapse --> 
-      
-    </div>
-  </div>
-</section>
-<!--Header Section End -->
-
-<div class="clearfix"></div>
-<!-- Carousel
-    ================================================== -->
-<div id="myCarousel" class="carousel slide" data-ride="carousel"> 
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner" role="listbox">
-    <div class="item active"> <img style="width:100%" class="first-slide" src="assets/images/slider-1.jpg" alt="First slide"/>
-      <div class="container">
-        <div class="carousel-caption slider-caption">
-          <h1>Mission Map 2016</h1>
-          <p>We treat an average 5 critically injured people a day.</p>
-          <a class="carousel_btn" href="" role="button">KNOW MORE <i class="fa fa-angle-right " aria-hidden="true"></i> </a> </div>
+      <div class="l_block">
+        <div class="l_img"><img src="image/icon-2.png"/></div>
+        <ul>
+          <b>Family Subscription</b>
+          <li>Up to INR 5 Lakh worth of Air Transport</li>
+          <li>Plan covers children & family residing in different locations (2 adult and 2 minor) *Provided location is covered under our services.</li>
+        </ul>
       </div>
     </div>
-    <div class="item"> <img style="width:100%" class="second-slide" src="assets/images/slider-2.jpg" alt="Second slide"/>
-      <div class="container">
-        <div class="carousel-caption slider-caption">
-          <h1>Mission Map 2016</h1>
-          <p>We treat an average 5 critically injured people a day.</p>
-          <a class="carousel_btn" href="" role="button">KNOW MORE <i class="fa fa-angle-right " aria-hidden="true"></i> </a> </div>
-      </div>
-    </div>
-    <div class="item"> <img style="width:100%" class="third-slide" src="assets/images/slider-3.jpg" alt="Third slide"/>
-      <div class="container">
-        <div class="carousel-caption slider-caption">
-          <h1>Mission Map 2016</h1>
-          <p>We treat an average 5 critically injured people a day.</p>
-          <a class="carousel_btn" href="" role="button">KNOW MORE <i class="fa fa-angle-right " aria-hidden="true"></i> </a> </div>
-      </div>
-    </div>
-  </div>
-  <!--<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <span class="fa fa-arrow-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <span class="fa fa-arrow-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> --></div>
-<!-- /.carousel -->
-
-<div class="h_icon_section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="row">
-          <div class="col-md-2"><img src="assets/images/h_icon-1.png"/></div>
-          <div class="col-md-10">
-            <div class="h_icon_title">How it Works </div>
-            <p> A critical care helicopter equipped with specialized medical equipment.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="row">
-          <div class="col-md-2"><img src="assets/images/h_icon-2.png"/></div>
-          <div class="col-md-10">
-            <div class="h_icon_title">Key Team</div>
-            <p>Our life saving mission made posible by our highly experienced and skilled team members.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="row">
-          <div class="col-md-2"> <img src="assets/images/h_icon-3.png"/></div>
-          <div class="col-md-10">
-            <div class="h_icon_title">Benefits</div>
-            <p>No limit usage as a subscriber, multiple use of helicopter, Site to hospital.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- our mission start -->
-<div class="ourmission">
-  <div class="container">
-    <div class="row">
-      <ul class="nav mission-tabs our_inner">
-        <li class="active"><a data-toggle="tab" href="#mission1"><span class="our_m">Our Mission</span></a></li>
-        <li><span class="line"></span></li>
-        <li><a data-toggle="tab" href="#vission1"><span class="our_m">Our Vision</span></a></li>
-      </ul>
-      <div class="tab-content our_inner">
-        <div id="mission1" class="tab-pane fade in active">
-          <p>We strive to provide around-the-clock services 
-            of first-class quality and safety, as well as to cultivate a conscious, structured manner of dealing with risks. Our organisational structures are characterised by a clear-cut delineation of tasks, competences and responsibilities. </p>
-          <img src="assets/images/ourmission_img.jpg"/> </div>
-        <div id="vission1" class="tab-pane fade">
-          <p>We strive to provide around-the-clock services 
-            of first-class quality and safety, as well as to cultivate a conscious, structured manner of dealing with risks. Our organisational structures are characterised by a clear-cut delineation of tasks, competences and responsibilities. </p>
-          <img src="assets/images/ourmission_img.jpg"/> </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- our missiom End -->
-
-<div class="clearfix marginbottom15"></div>
-<div class="p_saved_section">
-  <div class="container">
-    <div class="p_saved_inner">
-      <p>329 People saved in the month of June</p>
-      <a class="knowmore_btn">KNOW MORE <i class="fa fa-angle-right" aria-hidden="true"></i></a> </div>
-  </div>
-</div>
-
-<!--  services Start-->
-<div class="service_section">
-  <div  class="container">
-    <div class="row">
-      <div class="col-md-4 col-xs-12">
-        <div class="service_inner"> <img src="assets/images/service_img-1.jpg" class="img-responsive"/>
-          <div class="service_title">Abhijata’s Story</div>
-          <p>A critical care helicopter equipped with specialized medical equipment.</p>
-          <div class="box_line"></div>
-          <a href="" class="readmore"> READ MORE <i class="fa fa-angle-right " aria-hidden="true"></i></a> </div>
-      </div>
-      <div class="col-md-4 col-xs-12">
-        <div class="service_inner"> <img src="assets/images/service_img-2.jpg" class="img-responsive"/>
-          <div class="service_title">Our Services</div>
-          <p>A critical care helicopter equipped with specialized medical equipment.</p>
-          <div class="box_line"></div>
-          <a href="" class="readmore"> READ MORE <i class="fa fa-angle-right " aria-hidden="true"></i></a> </div>
-      </div>
-      <div class="col-md-4 col-xs-12">
-        <div class="service_inner"> <img src="assets/images/service_img-3.jpg" class="img-responsive"/>
-          <div class="service_title">Video</div>
-          <p>A critical care helicopter equipped with specialized medical equipment.</p>
-          <div class="box_line"></div>
-          <a href="" class="readmore"> READ MORE <i class="fa fa-angle-right " aria-hidden="true"></i></a> </div>
-      </div>
-      <div class="col-md-4 col-xs-12">
-        <div class="service_inner"> <img src="assets/images/service_img-4.jpg" class="img-responsive"/>
-          <div class="service_title">Join the Team</div>
-          <p>A critical care helicopter equipped with specialized medical equipment.</p>
-          <div class="box_line"></div>
-          <a href="" class="readmore"> READ MORE <i class="fa fa-angle-right " aria-hidden="true"></i></a> </div>
-      </div>
-      <div class="col-md-4 col-xs-12">
-        <div class="service_inner"> <img src="assets/images/service_img-5.jpg" class="img-responsive"/>
-          <div class="service_title">Events</div>
-          <p>A critical care helicopter equipped with specialized medical equipment.</p>
-          <div class="box_line"></div>
-          <a href="" class="readmore"> READ MORE <i class="fa fa-angle-right " aria-hidden="true"></i></a> </div>
-      </div>
-      <div class="col-md-4 col-xs-12">
-        <div class="service_inner"> <img src="assets/images/service_img-6.jpg" class="img-responsive"/>
-          <div class="service_title">News</div>
-          <p>A critical care helicopter equipped with specialized medical equipment.</p>
-          <div class="box_line"></div>
-          <a href="" class="readmore"> READ MORE <i class="fa fa-angle-right " aria-hidden="true"></i></a> </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--services End -->
-
-<div class="partners_section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="partners_title">Key Partners</div>
-      </div>
-      <div class="col-md-8">
-        <div class="mt20"><img src="assets/images/air_logo.png"/></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- contact form start -->
-<div class="floating-form" id="contact_form">
-  <div class="contact-opener"><i class="fa fa-phone" aria-hidden="true"></i> Call Back</div>
-  <div class="floating-form-heading">Schedule a Callback</div>
-  <div id="contact_results"></div>
-  <div id="contact_body">
-    <div class="enquiry">
-      <div class="row">
-        <form method="post" data-remote="true" accept-charset="UTF-8" action="/enquiries/callback" class="simple_form callback" novalidate autocomplete="off" id="callback_schedule_form">
-          <input type="hidden" value="✓" name="utf8">
-          <div class="col-md-12">
-            <div class="form-group">
-              <div class="form-group string required callback_name" aria-required="true">
-                <input type="text" id="callback_name" name="callback[name]" placeholder="Name" class="string required form-control" aria-required="true">
+    <div class="cls"></div>
+    <div class="h_icon_section">
+          <div class="l_how_block">
+            
+              <div class="l_how_left"> <img src="image/h_icon-1.png"> </div>
+              <div class="l_how_right">
+                <div class="h_icon_title"> <a href="/how-it-works">How it Works</a> </div>
+                <p> Seamless Integration of Air Ambulance Fleet with
+                  24*7 Operations Control Centre, delivering Pre
+                  Hospital Care to International Standards. </p>
               </div>
-            </div>
+            
           </div>
-          <div class="col-md-12">
-            <div class="form-group">
-              <div class="form-group tel required callback_phone_number" aria-required="true">
-                <input type="tel" id="callback_phone_number" name="callback[phone_number]" size="10" placeholder="Mobile" class="string tel required form-control" maxlength="10" aria-required="true">
+          <div class="l_how_block">
+           
+              <div class="l_how_left"> <img src="image/h_icon-2.png"> </div>
+              <div class="l_how_right">
+                <div class="h_icon_title"> <a href="">Key Team</a> </div>
+                <p> A Team of Aviation, Contact Centre and
+                  Emergency Health Care Professionals providing
+                  timely Emergency Response and Care. </p>
               </div>
-            </div>
+           
           </div>
-          <div class="col-md-12">
-            <div class="form-group">
-              <select id="callback_available_slot" name="callback[available_slot]" class="select required" prompt="Select Your Available Time Slot" aria-required="true">
-                <option value="">Select Your Available Time Slot</option>
-                <option value="08:00 AM to 10:00 AM">08:00 AM to 10:00 AM</option>
-                <option value="10:00 AM to 12:00 PM">10:00 AM to 12:00 PM</option>
-                <option value="12:00 PM to 02:00 PM">12:00 PM to 02:00 PM</option>
-                <option value="02:00 PM to 04:00 PM">02:00 PM to 04:00 PM</option>
-                <option value="04:00 PM to 06:00 PM">04:00 PM to 06:00 PM</option>
-                <option value="06:00 PM to 08:00 PM">06:00 PM to 08:00 PM</option>
-              </select>
-              <i class="bar"></i> </div>
-          </div>
-          <div class="clearfix"></div>
-          <div class="col-md-6 mt30">
-            <button id="#enquiry_reset_button" class="reset_btn" type="reset" name="button">Reset</button>
-          </div>
-          <div class="col-md-6 mt30">
-            <input type="submit" id="schedule_submit" class="sub_btn" value="Submit" name="commit">
-          </div>
-          <div class="col-md-4 mt3"></div>
-        </form>
+          <div class="l_how_block">
+            
+              <div class="l_how_left"> <img src="image/h_icon-3.png"> </div>
+              <div class="l_how_right">
+                <div class="h_icon_title"> <a href="">Benefits</a> </div>
+                <p> Affordable, Accessible Service for Individuals and Families, supported by Insurance. </p>
+              </div>
+            
+          </div>      
+    </div>
+    <div class="cls"></div>
+    <div class="l_footer">
+      <div class="l_footer_title">Services Available in</div>
+      <div class="l_footer_nav">
+        
+        <a href="">ANDRA PRADESH</a>
+         <a href="">KARNATAKA</a>
+          <a href="">KERALA</a>
+          <a href="">TAMIL NADU</a>
+          <a href="">TELANGANA</a>
+        
       </div>
     </div>
   </div>
 </div>
-<!-- contact form end --> 
-
-<!--Footer Section Start -->
-<div class="footer">
-  <div class="container">
-    <div class="newletter">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="newletter_title">Newsletter Sign up</div>
-        </div>
-        <div class="col-md-9">
-          <form>
-            <div class="row">
-            <div class="col-md-6">
-            <div class="form-group">
-              <input type="text" required="required"/>
-            </div>
-            <div class="col-md-6">
-            <div class="form-group">
-              <input type="text" required="required"/>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <input type="text" required="required"/>
-              </div>
-              <div class="col-md-6">
-                <button class="sub_btn"> Subscribe</button>
-              </div>
-            </div>
-          </form>
-          - </div>
-      </div>
-    </div>
-    <div class="footer_menu">
-      <div class="footer_inner_menu">
-        <h2>How it Works</h2>
-        <ul>
-          <li> <a href="">Charter services</a> </li>
-          <li> <a href="">Organ transport</a> </li>
-          <li> <a href="">Secondary transport</a></li>
-          <li> <a href="">Pediatary transport</a></li>
-          <li> <a href="">Emergency transport</a> </li>
-          <li> <a href="">Drugs transport</a></li>
-          <li> <a href="">Tertiary transport</a></li>
-        </ul>
-      </div>
-      <div class="footer_inner_menu">
-        <h2>Plans</h2>
-        <ul>
-          <li> <a href="">Individuals </a></li>
-          <li> <a href="">Family</a> </li>
-          <li> <a href="">Hospitals</a></li>
-          <li> <a href="">Corporates</a></li>
-        </ul>
-      </div>
-      <div class="footer_inner_menu">
-        <h2>Services</h2>
-        <ul>
-          <li> <a href="">How it works</a></li>
-          <li> <a href="">Family</a> </li>
-          <li> <a href="">Medical devices/equipment used</a></li>
-          <li> <a href="">Regulatory norms and insurances</a></li>
-          <li> <a href="">About the flight</a></li>
-        </ul>
-      </div>
-      <div class="footer_inner_menu">
-        <h2>Team</h2>
-        <ul>
-          <li> <a href="">Partnerships </a></li>
-          <li> <a href="">Advisory board</a> </li>
-          <li> <a href="">Management team</a></li>
-          <li> <a href="">History</a></li>
-        </ul>
-      </div>
-      <div class="footer_inner_menu">
-        <h2>Media</h2>
-        <ul>
-          <li> <a href="">Videos </a></li>
-          <li> <a href="">Press release</a> </li>
-          <li> <a href="">News</a></li>
-          <li> <a href="">FAQ</a></li>
-          <li><a href="">Events </a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="clearfix"></div>
-    <div class="footer_bottom">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="f_title">Find us on social media</div>
-          <div class="f_social">
-            <ul class="fa-ul">
-              <li><a  href=""><i class="fa  fa-facebook"></i></a></li>
-              <li><a href=""><i class="fa  fa-twitter"></i></a></li>
-              <li><a href=""><i class="fa  fa-google-plus"></i></a></li>
-              <li><a href=""><i class="fa  fa-linkedin"></i></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="f_title">Download the mobile app</div>
-          <div class="f_social">
-            <ul class="fa-ul">
-              <li><a  href=""><i class="fa  fa-apple" aria-hidden="true"></i></a></li>
-              <li><i class="fa  fa-android" aria-hidden="true"></i> </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Bootstrap core JavaScript
-    ================================================== --> 
-<!-- Placed at the end of the document so the pages load faster --> 
-<script src="assets/js/jquery.min.js"></script> 
-<script src="assets/js/bootstrap.min.js"></script> 
-<script src="assets/js/docs.min.js"></script> 
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
-<script src="assets/js/ie10-viewport-bug-workaround.js"></script> 
-<script type="text/javascript">
-$(document).ready(function(){ 
-
-	var _scroll = true, _timer = false, _floatbox = $("#contact_form"), _floatbox_opener = $(".contact-opener") ;
-	_floatbox.css("right", "-300px"); //initial contact form position
-	
-	//Contact form Opener button
-	_floatbox_opener.click(function(){
-		if (_floatbox.hasClass('visiable')){
-            _floatbox.animate({"right":"-300px"}, {duration: 300}).removeClass('visiable');
-        }else{
-           _floatbox.animate({"right":"0px"},  {duration: 300}).addClass('visiable');
-        }
-	});
-	
-	//Effect on Scroll
-	$(window).scroll(function(){
-		if(_scroll){
-			_floatbox.animate({"top": "30px"},{duration: 300});
-			_scroll = false;
-		}
-		if(_timer !== false){ clearTimeout(_timer); }           
-			_timer = setTimeout(function(){_scroll = true; 
-			_floatbox.animate({"top": "10px"},{easing: "linear"}, {duration: 500});}, 400); 
-	});
-	
-});
-</script> 
-
-<!--Footer Setion End --> 
-<script>
-      $(function() {
-        window.prettyPrint && prettyPrint()
-        $(document).on('click', '.yamm .dropdown-menu', function(e) {
-          e.stopPropagation()
-        })
-      })
-    </script>
 </body>
 </html>
